@@ -1,55 +1,53 @@
-// Exercises: The DOM
+// Exercises: for loops
 
-// EXERCISE: The Logo Hijack
+// EXERCISE: The even/odd reporter
 
-// No homepage is safe from the logo bandit!
+// Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
+for(var i = 0;
+	i<=20;
+	i++) {
+	if(i % 2 === 0) {
+		console.log(i + " is even")
+	} else {
+		console.log(i + " is odd")
+	}
+};
+// EXERCISE: Multiplication Tables
 
-// Open up www.google.com in Chrome or Firefox, and open up the console.
-// Find the Google logo and store it in a variable.
-// Modify the source of the logo IMG so that it's a Yahoo logo instead.
-// Find the Google search button and store it in a variable.
-// Modify the text of the button so that it says "Yahooo!" instead.
+// Write a for loop that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result (e.g. "2 * 9 = 18").
 
-// EXERCISE: About Me
-
-// Cuz every webpage needs an "About" section.
-
-// Start with this HTML and save it as "aboutme.html":
-// <!DOCTYPE html>
-// <html>
-//  <head>
-//   <meta charset="utf-8"/>
-//   <title>About Me</title>
-// </head>
-// <body>
-//   <h1>About Me</h1>
-  
-//   <ul>
-//     <li>Nickname: <span id="nickname"></span>
-//     <li>Favorites:  <span id="favorites"></span>
-//     <li>Hometown: <span id="hometown"></span>
-//    </ul>
-  
-//  </body>
-// </html>
-  
-// Add a script tag to the bottom.
-// Change the body style so it has a font-family of "Arial, sans-serif".
-// Replace each of the spans (nickname, favorites, hometown) with your own information.
-// Iterate through each li and change the class to "listitem". Add a style tag that sets a rule for "listitem" to make the color red.
-// Create a new img element and set its src attribute to a picture of you. Append that element to the page.
-
-// EXERCISE: The Book List
-
-// Keep track of which books you read and which books you want to read!
-
-// Create a webpage with an h1 of "My Book List".
-// Add a script tag to the bottom of the page, where all your JS will go.
-// Copy the array of books from the previous exercise.
-// Iterate through the array of books. For each book, create a p element with the book title and author and append it to the page.
-// Bonus: Use a ul and li to display the books.
-// Bonus: add a property to each book with the URL of the book cover, and add an img element for each book on the page.
-// Bonus: Change the style of the book depending on whether you have read it or not.
+for(var i = 0; i<=10; i++){
+	console.log(i * 9)
+};
 
 
+// Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
+
+
+
+// EXERCISE: The Grade Assigner
+
+// Check the results of assignGrade function from the conditionals exercise for every value from 60 to 100 - so your log should show "For 89, you got a B. For 90, you got an A.", etc.
+
+var assignGrade = function(x){
+	if (x > 90) {
+		return("A");
+	}
+	else if (x > 79 && x < 90) {
+		return("B");
+	}
+	else if (x >74 && x < 80) {
+		return("C");
+	}
+	else if (x > 65 && x < 75) {
+		return("D");
+	}
+	else { return("F");
+	}
+};
+
+var num = for(var i = 60; i<=100; i++)
+console.log(assignGrade(num)
+
+////WRONG
 
