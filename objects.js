@@ -36,24 +36,24 @@ console.log(recipe.ingredients[2])
 // Now use an if/else statement to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
 
 var readingList = [
-var a = {
+{
 title: "The Hobbit",
 arthur: "Tolkien",
 alreadyRead: false
 },
-var b {
+{
 title: "Sherlock Holmes",
 arthur: "Watson",
 alreadyRead: false
 },
-var c {
+{
 title: "Game of Thrones",
 arthur: "George R R Maritin",
 alreadyRead: true
 }]
 
-for(var i = i; i < readinglist)
-console.log(readingList[0], )
+for(var i = 0; i < readinglist; i++ )
+console.log(readingList[0])
 console.log(readingList[1])
 console.log(readingList[2])
 
@@ -64,10 +64,17 @@ console.log(readingList[2])
 // Create an object to store the following information about your favorite movie: title (a string), duration (a number), and stars (an array of strings).
 // Create a function to print out the movie information like so: "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."
 
+var movies = {
+	title: "Bambi",
+	duration: 90,
+	stars: ["Bambi", "Leo", "Smith"]
+}
 
+var print = function(){
+	console.log(movies.title + " lasts for " + movies.duration + " minutes. Stars: " + movies.stars)
+}
 
-
-
+print(movies)
 
 
 
