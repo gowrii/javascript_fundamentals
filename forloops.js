@@ -46,8 +46,7 @@ var assignGrade = function(x){
 	}
 };
 
-var num = for(var i = 60; i<=100; i++)
-console.log(assignGrade(num)
-
-////WRONG
+for(var i = 60; i<=100; i++) {
+	console.log("For " + i + " you got " + assignGrade(i))	
+}
 
