@@ -52,10 +52,13 @@ arthur: "George R R Maritin",
 alreadyRead: true
 }]
 
-for(var i = 0; i < readinglist; i++ )
-console.log(readingList[0])
-console.log(readingList[1])
-console.log(readingList[2])
+for(var i = 0; i < readingList; i++ ){ 
+var reading = readingList[i.title];
+var athur = readingList[i.arthur];
+var alreadyR = readingList[i.alreadyRead];
+}
+console.log(reading + " by " + athur);
+*****
 
 // EXERCISE: The Movie Database
 
